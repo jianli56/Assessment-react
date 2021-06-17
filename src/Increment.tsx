@@ -9,11 +9,15 @@ const Increment = () => {
         setCount(count + 1);
     }
 
+    function decrement() {
+        setCount(count - 1);
+    }
 
     return (
         <div>
-            <button type="button" className="form-control" onClick={increment} >increment</button>
-            <label id="ccount">  {count}</label>
+            <button type="button" className="form-control" onClick={increment} > + </button>
+            <label id="ccount">  {count}  </label>
+            <button type="button" className="form-control" onClick={decrement} > - </button>
         </div>
     );
 }
